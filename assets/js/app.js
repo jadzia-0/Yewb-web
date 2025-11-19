@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
      // Add a link to a website small icon*/
      const linkIcon = document.createElement('link');
      linkIcon.rel = 'icon';
-     linkIcon.href = '/assets/icons/icon.ico'; // Icon link
+     linkIcon.href = 'https://github.com/jadzia-0/Yewb-web/assets/icons/icon.ico'; // Icon link
      linkIcon.type = 'image/x-icon';
      document.head.appendChild(linkIcon);
 
