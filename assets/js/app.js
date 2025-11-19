@@ -5,8 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
   topFunction();
   const theme = localStorage.getItem("theme");
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_dark.svg';
-  const lightLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_light.svg';
+  const darkLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_light.svg';
 
   if (theme == "dark") {
     document.body.classList.add("dark-mode");
@@ -42,8 +42,8 @@ function myFunctionDark22() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_dark.svg';
-  const lightLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_light.svg';
+  const darkLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_light.svg';
 
   if (logoHeader) logoHeader.src = isDark ? darkLogo : lightLogo;
 }
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://github.com/jadzia-0/Yewb-web/assets/css/style.css"; // Replace with your stylesheet URL
+    link.href = "https://jadzia-0.github.io/yewb-web/assets/css/style.css"; // Replace with your stylesheet URL
     link.type = "text/css";
     document.head.appendChild(link);
 
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
      // Add a link to a website small icon*/
      const linkIcon = document.createElement('link');
      linkIcon.rel = 'icon';
-     linkIcon.href = 'https://github.com/jadzia-0/Yewb-web/assets/icons/icon.ico'; // Icon link
+     linkIcon.href = 'https://jadzia-0.github.io/yewb-web/assets/icons/icon.ico'; // Icon link
      linkIcon.type = 'image/x-icon';
      document.head.appendChild(linkIcon);
 
@@ -279,7 +279,7 @@ function setLanguagePreference(lang) {
 }
 
 async function fetchLanguageData(lang) {
-  const response = await fetch(`https://github.com/jadzia-0/Yewb-web/assets/js/${lang}.json`); //location file of language translated text
+  const response = await fetch(`https://jadzia-0.github.io/yewb-web/assets/js/${lang}.json`); //location file of language translated text
   return response.json();
 }
 
