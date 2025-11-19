@@ -130,7 +130,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 //Load all functions to DOM, and make sure it works
 document.addEventListener("DOMContentLoaded", async (event) => {
     loadComponent("header", "jadzia-0.github.io/yewb-web/components/header.html");
-    loadComponent("footer", "jadzia-0.github.io/yewb-web/components/components/footer.html");
+    loadComponent("footer", "jadzia-0.github.io/yewb-web/components/footer.html");
     console.log("DOM fully loaded and components loaded.");
   });
 
