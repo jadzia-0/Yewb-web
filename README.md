@@ -1,1 +1,1 @@
-Website prototype designed for YEWB
+Website mockup designed for YEWB
