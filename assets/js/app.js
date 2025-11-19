@@ -5,8 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
   topFunction();
   const theme = localStorage.getItem("theme");
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_dark.svg';
-  const lightLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_light.svg';
+  const darkLogo = 'https://jadzia-0.github.io/Yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://jadzia-0.github.io/Yewb-web/assets/images/logo_light.svg';
 
   if (theme == "dark") {
     document.body.classList.add("dark-mode");
@@ -42,8 +42,8 @@ function myFunctionDark22() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_dark.svg';
-  const lightLogo = 'https://jadzia-0.github.io/yewb-web/assets/images/logo_light.svg';
+  const darkLogo = 'https://jadzia-0.github.io/Yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://jadzia-0.github.io/Yewb-web/assets/images/logo_light.svg';
 
   if (logoHeader) logoHeader.src = isDark ? darkLogo : lightLogo;
 }
@@ -129,8 +129,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 //Load all functions to DOM, and make sure it works
 document.addEventListener("DOMContentLoaded", async (event) => {
-    loadComponent("header", "jadzia-0.github.io/yewb-web/components/header.html");
-    loadComponent("footer", "jadzia-0.github.io/yewb-web/components/footer.html");
+    loadComponent("header", "https://jadzia-0.github.io/Yewb-web/components/header.html");
+    loadComponent("footer", "https://jadzia-0.github.io/Yewb-web/components/footer.html");
     console.log("DOM fully loaded and components loaded.");
   });
 
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://jadzia-0.github.io/yewb-web/assets/css/style.css"; // Replace with your stylesheet URL
+    link.href = "https://jadzia-0.github.io/Yewb-web/assets/css/style.css"; // Replace with your stylesheet URL
     link.type = "text/css";
     document.head.appendChild(link);
 
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
      // Add a link to a website small icon*/
      const linkIcon = document.createElement('link');
      linkIcon.rel = 'icon';
-     linkIcon.href = 'https://jadzia-0.github.io/yewb-web/assets/icons/icon.ico'; // Icon link
+     linkIcon.href = 'https://jadzia-0.github.io/Yewb-web/assets/icons/icon.ico'; // Icon link
      linkIcon.type = 'image/x-icon';
      document.head.appendChild(linkIcon);
 
@@ -279,7 +279,7 @@ function setLanguagePreference(lang) {
 }
 
 async function fetchLanguageData(lang) {
-  const response = await fetch(`https://jadzia-0.github.io/yewb-web/assets/js/${lang}.json`); //location file of language translated text
+  const response = await fetch(`https://jadzia-0.github.io/Yewb-web/assets/js/${lang}.json`); //location file of language translated text
   return response.json();
 }
 
