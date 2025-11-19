@@ -5,8 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
   topFunction();
   const theme = localStorage.getItem("theme");
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = '/assets/images/logo_dark.svg';
-  const lightLogo = '/assets/images/logo_light.svg';
+  const darkLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_light.svg';
 
   if (theme == "dark") {
     document.body.classList.add("dark-mode");
@@ -42,8 +42,8 @@ function myFunctionDark22() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 
   const logoHeader = document.getElementById('logo-header');
-  const darkLogo = '/assets/images/logo_dark.svg';
-  const lightLogo = '/assets/images/logo_light.svg';
+  const darkLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_dark.svg';
+  const lightLogo = 'https://github.com/jadzia-0/Yewb-web/assets/images/logo_light.svg';
 
   if (logoHeader) logoHeader.src = isDark ? darkLogo : lightLogo;
 }
@@ -129,8 +129,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 //Load all functions to DOM, and make sure it works
 document.addEventListener("DOMContentLoaded", async (event) => {
-    loadComponent("header", "/components/header.html");
-    loadComponent("footer", "/components/footer.html");
+    loadComponent("header", "https://github.com/jadzia-0/Yewb-web/components/header.html");
+    loadComponent("footer", "https://github.com/jadzia-0/Yewb-web/components/footer.html");
     console.log("DOM fully loaded and components loaded.");
   });
 
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "/assets/css/style.css"; // Replace with your stylesheet URL
+    link.href = "https://github.com/jadzia-0/Yewb-web/assets/css/style.css"; // Replace with your stylesheet URL
     link.type = "text/css";
     document.head.appendChild(link);
 
@@ -279,7 +279,7 @@ function setLanguagePreference(lang) {
 }
 
 async function fetchLanguageData(lang) {
-  const response = await fetch(`/assets/js/${lang}.json`); //location file of language translated text
+  const response = await fetch(`https://github.com/jadzia-0/Yewb-web/assets/js/${lang}.json`); //location file of language translated text
   return response.json();
 }
 
